@@ -1,0 +1,23 @@
+programa{
+
+funcao inicio() {
+    real a, b, nota_a, nota_b
+    escreva("Escreva a nota p1 do aluno A: ") //Primeira Ação
+    leia(a)
+    escreva("Escreva a nota p2 do aluno A: ") // Segunda Ação
+    leia(b)
+
+    escreva("Escreva a nota p1 do aluno B: ") // Terceira Ação
+    leia(nota_a)
+    escreva("Escreva a nota p2 do aluno B: ") //Quarta Ação
+    leia(nota_b)  
+
+    escreva("Média do aluno A: ", media_aluno(a, b))  // Primeira chamada calcula a média do aluno com as notas 'a' e 'b'
+    escreva("\nMédia do aluno B: ", media_aluno(nota_a, nota_b)) // "/n" é pular
+}
+
+funcao real media_aluno(real nota_a, real nota_b) {
+    retorne ((nota_a + nota_b) / 2) // Correção: parênteses para garantir a precedência correta
+}
+
+      }
